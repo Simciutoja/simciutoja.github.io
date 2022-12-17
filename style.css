@@ -191,3 +191,17 @@ a.my-button {
   font-weight: 300;
   font-size: 20px;
 }
+
+.aktualny h4 {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40%;
+}
+
+@media only screen and (max-width: 600px) {
+  .aktualny h4 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+  }
+}
