@@ -24,7 +24,6 @@ html {
   -moz-box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.4);
   border-radius: 0px 0px 10px 10px;
 }
-
 .menubar ul li {
   list-style: none;
   display: inline;
@@ -33,11 +32,31 @@ html {
   top: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 330px) {
+  .menubar ul li {
+    list-style: none;
+    display: inline;
+    margin-left: 1%;
+    position: relative;
+    top: 10px;
+  }
+}
+
+@media only screen and (min-width: 331px) {
   .menubar ul li {
     list-style: none;
     display: inline;
     margin-left: 5%;
+    position: relative;
+    top: 10px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .menubar ul li {
+    list-style: none;
+    display: inline;
+    margin-left: 15%;
     position: relative;
     top: 10px;
   }
@@ -123,4 +142,52 @@ a.my-button {
   margin-top: 2%;
   border-radius: 50%;
   width: 50%;
+}
+
+.partnerzy {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 40%;
+  height: 30vh;
+  box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .partnerzy {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 80%;
+    height: 30vh;
+    box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+  }
+}
+
+.partnerzy img {
+  width: 40%;
+  margin-top: 2%;
+}
+
+@media only screen and (min-width: 601px) {
+  .partnerzy img {
+    width: 10%;
+  }
+}
+
+.partnerzy h1 {
+  font-weight: 700;
+}
+
+.partnerzy a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  font-size: 20px;
 }
