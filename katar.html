@@ -38,7 +38,7 @@
       property="og:image"
       content="https://cdn.discordapp.com/icons/1049040708222328852/d4061748522337f6a8bbb9a22b8b3bbf.png?size=4096"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="menubar">
@@ -58,7 +58,7 @@
       </ul>
     </div>
 
-    <div class="aktualny">
+    <div class="aktualny" data-aos="fade-up-left">
       <h1>KATAR - EKWADOR</h1>
       <h3>15:00 - 16:30</h3>
       <h5>Park Magiczny</h5>
@@ -66,7 +66,7 @@
       <a class="my-button" href="/index">Powrót do strony głównej</a>
     </div>
 
-    <div class="aktualny">
+    <div class="aktualny" data-aos="fade-up-right">
       <h4>
         Mecz rozpoczął się o godzinie 16:15, w którym Katar podejmował Ekwador.
         Wynik otworzył int_vx, strzelając bramkę drużynie Kataru. Chwilę potem
@@ -84,28 +84,28 @@
       </h4>
     </div>
 
-    <div class="info" id="var">
+    <div class="info" id="var" data-aos="fade-up-left">
       <h1>Kartki wystawione</h1>
       <h3>Katar - 🟨 🟨 🟥</h3>
       <br />
       <h3>Ekwador - 🟨 🟨 🟨</h3>
     </div>
 
-    <div class="info" id="var">
+    <div class="info" id="var" data-aos="fade-up-right">
       <h1>Statystyki meczu</h1>
       <h3>Na ten moment niestety nie możemy podać takich informacji!</h3>
     </div>
 
-    <div class="info" id="var">
+    <div class="info" id="var" data-aos="fade-up-left">
       <h1>Składy</h1>
       <h3>Na ten moment niestety nie możemy podać takich informacji!</h3>
     </div>
 
-    <div class="info" id="var">
+    <div class="info" id="var" data-aos="fade-up-right">
       <h1>Osoba opisująca ten mecz</h1>
     </div>
 
-    <div class="osoba">
+    <div class="osoba" data-aos="fade-up-left">
       <img
         src="https://cdn.discordapp.com/avatars/814053492384989234/fba61078d3f198229c4c37ca742071fb.png?size=4096"
         alt="Profilowe"
@@ -118,12 +118,12 @@
       </h3>
     </div>
 
-    <div class="info">
+    <div class="info" data-aos="fade-up-right">
       <h1>Nasi partnerzy</h1>
       <h3>Partnerzy którzy nas promują</h3>
     </div>
 
-    <div class="partnerzy">
+    <div class="partnerzy" data-aos="fade-up-left">
       <img
         src="https://cdn.discordapp.com/icons/922427751166787645/82ff7caf47874c3e2ea4ed5f6b39c59b.png?size=4096"
         alt="logo ursynowa"
@@ -137,5 +137,10 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
