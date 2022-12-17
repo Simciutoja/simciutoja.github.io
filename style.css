@@ -101,6 +101,8 @@ a.my-button {
 .info {
   text-align: center;
   margin-top: 2%;
+  margin: auto;
+  max-width: 80%;
 }
 
 .info h1 {
