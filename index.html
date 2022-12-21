@@ -3,100 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
-    <script src="https://unpkg.com/gsap@3.11.3/dist/gsap.min.js"></script>
-    <script src="https://unpkg.com/gsap@3.11.3/dist/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/gsap@3.11.3/dist/ScrollToPlugin.min.js"></script>
-    <meta
-    name="description"
-    content="Moja oficjalna strona!"
-  />
-  <meta name="theme-color" content="#094b65" />
-  <meta property="og:url" content="https://simciutoja.github.io/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Simciu WebSite" />
-  <meta
-    property="og:description"
-    content="Moja oficjalna strona!"
-  />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simciu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/avatars/991282953961349160/2ab2fb7752931a96dc9befd8b007bba3.png?size=1024" type="image/x-icon">
+
   </head>
   <body>
-    <header id="header">
-      <a href="#" class="logo">Simciu</a>
-    </header>
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <img
+            src="https://cdn.discordapp.com/attachments/1050496326858702919/1055192080751804488/logo_1.png"
+            alt=""
+          />
+        </div>
 
-    <section>
-      <h2 id="text"><span>To nowy ja,</span><br />Simciu</h2>
-
+    </nav>
+    <section class="hero">
       <img
-        src="https://drive.google.com/uc?id=1OheESDN1QodxRPvLvRaRRxWcKbn8RW5d"
-        alt="bird1"
-        id="bird1"
+        src="https://cdn.discordapp.com/attachments/1050496326858702919/1055189597757386762/1.png"
+        class="translateX"
+        data-speed="0.25"
+        id="moon"
+        alt=""
       />
-
       <img
-        src="https://drive.google.com/uc?id=1dVB79qyy_ED0uVxzINWL3AtCpMShNmk5"
-        alt="bird2"
-        id="bird2"
+        src="https://cdn.discordapp.com/attachments/1050496326858702919/1055189595484061756/2.png"
+        class="translateY"
+        data-speed="0.35"
+        id="clouds"
+        alt=""
       />
-
       <img
-        src="https://drive.google.com/uc?id=1h_RvHqxijkZRpaJlL80aXzholwUbDF18"
-        alt="forest"
-        id="forest"
+        src="https://cdn.discordapp.com/attachments/1050496326858702919/1055189595890929704/3.png"
+        class="translateY"
+        data-speed="0.15"
+        id="mount"
+        alt=""
       />
-
-      <a href="#" id="btn">O mnie</a>
-
+      <h1 id="text" class="translateX" data-speed="-3">
+        Odkryj moją stronę
+      </h1>
+      <a href="#" id="btn">Dowiedz się więcej</a>
       <img
-        src="https://drive.google.com/uc?id=1C4qCUaDw4MnuDV6ofE4pJHzxN-vUpbDw"
-        alt="rocks"
-        id="rocks"
-      />
-
-      <img
-        src="https://drive.google.com/uc?id=1BlnS76cnYYA-rvQBaTAaAngxsxSK7iC1"
-        alt="water"
-        id="water"
+        src="https://cdn.discordapp.com/attachments/1050496326858702919/1055189596251631646/4.png"
+        class="translateY"
+        data-speed="0"
+        id="base"
+        alt=""
       />
     </section>
-    <div class="sec">
-      <h2>Cześć, nazywam się Szymon</h2>
-      <p>
-        <br /><br />Mam 13 lat, interesuję się programowaniem od około 2 lat.
-        Programuję w jezykach takich jak java script, java, python oraz html.
-        Pewnie mnie nie znasz, ale umięjetności jak na 13-sto latka mam lepsze
-        niż przeciętny nastolatek. <br /><br />
-      </p>
-      <h2>Formy kontaktu jakie oferuje</h2>
-      <p>
-      <div class="btns">
-        <br /><br /><a href="mailto:twojmail@domena.pl" target="_blank"
-          ></img>E-mail</a
-        >
-      </div>
-      <div class="btns">
-          <br /><br /><a href="mailto:twojmail@domena.pl" target="_blank"
-            >Discord</a
-          >
+    <section id="about" class="section-padding">
+      <div class="container grid">
+        <div class="left-content" data-aos="fade-up-right">
+          <h4>
+            Jestem Szymon i mam 14 lat. Od 2 lat zajmuję się programowaniem i jest to moja pasja. Znam języki takie jak Java, Java script oraz HTML i ciężko pracuję, aby rozwijać swoje umiejętności i nabywać nowe. Jestem ambitny i chcę być jak najlepszy w tym, co robię, dlatego ciężko pracuję, aby osiągać swoje cele. Wierzę, że dzięki mojej ciężkiej pracy i zaangażowaniu w programowanie, mam szansę na przyszłość pełną sukcesów w branży IT.
+          </h4>
         </div>
-      </p>
-    </div>
-    <div class="loader"></div>
+        <div class="right-content" id="image" data-aos="fade-up-left">
+          <img
+            src="https://cdn.discordapp.com/avatars/991282953961349160/2ab2fb7752931a96dc9befd8b007bba3.png?size=1024"
+            alt=""
+            style="border-radius: 50%"
+          />
+        </div>
+      </div>
+      <div class="container grid">
+        <div class="left-content" data-aos="fade-up-right">
+          <h5 class="heading">Przykładowy wykonany projekt</h5>
+          <p>
+            Strona wykonana wraz z pomocą mojego znajomego. Jest to strona dla gry, oczywiście
+          </p>
+        </div>
+        <div class="right-content" data-aos="fade-up-left">
+          <h5 class="heading">Formy kontaktu</h5>
+          <p>
+            Oferuję jak narazie jedynie kontakt poprzez komunikator discord. W późniejszych czasach będzie możliwe komunikowanie się przez tą strone!
+          </p>
+        </div>
+      </div>
+      <div class="container grid">
+        <div class="left-content" data-aos="fade-up-right">
+          <img
+            src="https://cdn.discordapp.com/attachments/1050496326858702919/1055197455253246032/image.png"
+            alt=""
+            style="border-radius: 5px"
+          />
+        </div>
+        <div class="right-content" id="btn-des" data-aos="fade-up-left">
+          <a href="#" target="_blank">Discord</a>
+        </div>
+      </div>
 
-    <script src="script.js"></script>
+    </section>
+    <footer>
+      <div class="container">
+        <a href="#">
+          <img src="https://cdn.discordapp.com/attachments/1050496326858702919/1055192080751804488/logo_1.png" alt="" />
+        </a>
+      </div>
+    </footer>
     <script>
-      window.addEventListener("load", () => {
-        const loader = document.querySelector(".loader");
-
-        loader.classList.add("loader--hidden");
-
-        loader.addEventListener("transitionend", () => {
-          document.body.removeChild(loader);
+      const translateX = document.querySelectorAll(".translateX");
+      const translateY = document.querySelectorAll(".translateY");
+      window.addEventListener("scroll", () => {
+        let scroll = window.pageYOffset;
+        translateX.forEach((element) => {
+          let speed = element.dataset.speed;
+          element.style.transform = `translateX(${scroll * speed}px)`;
+        });
+        translateY.forEach((element) => {
+          let speed = element.dataset.speed;
+          element.style.transform = `translateY(${scroll * speed}px)`;
         });
       });
+    </script>
+    <script>
+      AOS.init({
+  disable: 'mobile'
+}); 
+
+AOS.init({
+  disable: function () {
+    var maxWidth = 800;
+    return window.innerWidth < maxWidth;
+  }
+});
+  </script>
+  <script>
+      AOS.init();
     </script>
   </body>
 </html>
