@@ -106,35 +106,7 @@
         </a>
       </div>
     </footer>
-    <script>
-      const translateX = document.querySelectorAll(".translateX");
-      const translateY = document.querySelectorAll(".translateY");
-      window.addEventListener("scroll", () => {
-        let scroll = window.pageYOffset;
-        translateX.forEach((element) => {
-          let speed = element.dataset.speed;
-          element.style.transform = `translateX(${scroll * speed}px)`;
-        });
-        translateY.forEach((element) => {
-          let speed = element.dataset.speed;
-          element.style.transform = `translateY(${scroll * speed}px)`;
-        });
-      });
-    </script>
-    <script>
-      AOS.init({
-  disable: 'mobile'
-}); 
-
-AOS.init({
-  disable: function () {
-    var maxWidth = 800;
-    return window.innerWidth < maxWidth;
-  }
-});
-  </script>
-  <script>
-      AOS.init();
-    </script>
+    <script src="script.js">
+      </script>
   </body>
 </html>
